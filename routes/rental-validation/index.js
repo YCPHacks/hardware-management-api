@@ -76,5 +76,6 @@ module.exports = async function (fastify, options) {
             //console.log("error");
             }
         };
+        await session.close();
     });
 }
